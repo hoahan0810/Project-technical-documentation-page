@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: #240d8c;
+}
+header {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+#main-doc {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  #main-doc {
+    flex-direction: column;
+  }
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  margin-right: 320px;
+  border-right: solid;
+  border-color: #121e8f;
+}
+#navbar header {
+  margin: 10px auto;
+  position: fixed;
+  text-align: center;
+  padding: 10px 20px;
+}
+#navbar ul {
+  margin: 80px 0 20px 0;
+  height: 85%;
+  overflow-y: scroll;
+}
+#navbar li {
+  border-top: 1px #000 solid;
+  padding: 10px 20px;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    border-right: none;
+  }
+  #navbar header {
+    margin: 10px auto 5px auto;
+    position: relative;
+  }
+  #navbar > ul {
+    margin-top: 10px;
+    border: 2px solid;
+  }
+  #navbar li {
+    padding-left: 3rem;
+  }
+}
+.info {
+  margin-left: 350px;
+  margin-right: 50px;
+}
+.info article {
+  color: #0f1485;
+  margin-left: 2em;
+}
+.info p {
+  margin-bottom: 1.2em;
+}
+.info ul {
+  margin-left: 3em;
+}
+.info li {
+  margin-bottom: 1em;
+}
+.code {
+  display: block;
+  background-color: rgba(132, 47, 189, 0.4);
+  margin-bottom: 1.2em;
+  margin-left: 1.5em;
+  padding: 0.5em;
+  width: 90%;
+  font-size: 0.8em;
+}
+
+@media (max-width: 800px) {
+  .info {
+    margin: 20px 30px;
+  }
+  .info header {
+    margin-left: 0.3em;
+  }
+}
